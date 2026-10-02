@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JOI 2.0 Kontrol Paneli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: sans-serif; background: #121212; color: white; padding: 20px; }
+        input { width: 80%; padding: 10px; border-radius: 5px; border: none; }
+        button { padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+        #response { margin-top: 20px; color: #00ff00; }
+    </style>
+</head>
+<body>
+    <h2>JOI 2.0 Komut Merkezi</h2>
+    <input type="text" id="commandInput" placeholder="JOI'ye bir şey söyle...">
+    <button onclick="sendCommand()">Gönder</button>
+    <div id="response"></div>
+
+    <script>
+        async function sendCommand() {
+            const cmd = document.getElementById('commandInput').value;
+            const responseDiv = document.getElementById('response');
+            
+            // Buradaki IP, bilgisayarının yerel IP'si olmalı!
+            const server_ip = "192.168.1.XX"; 
+
+            try {
+                const res = await fetch(`http://${server_ip}:5000/komut`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: cmd })
+                });
+                const data = await res.json();
+                responseDiv.innerText = data.reply;
+            } catch (err) {
+                responseDiv.innerText = "Hata: Sunucuya bağlanılamadı.";
+            }
+        }
+    </script>
+</body>
+</html>

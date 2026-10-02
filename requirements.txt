@@ -1,0 +1,10 @@
+opencv-python
+requests
+python-dotenv
+duckduckgo-search
+pynput
+chromadb
+sentence-transformers
+SpeechRecognition
+edge-tts
+pygame
