@@ -94,7 +94,7 @@ JOI 2.0 is a local AI companion that runs entirely on your own machine. It uses 
 
 ```bash
 git clone https://github.com/yigit545/JOI2.0-AI.git
-cd JOI2_0
+cd JOI2.0-AI
 ```
 
 ### 2. Create a virtual environment
