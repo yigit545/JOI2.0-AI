@@ -78,7 +78,7 @@ JOI 2.0 is a local AI companion that runs entirely on your own machine. It uses 
 
 | Component | Details |
 |---|---|
-| OS | Pardus Linux (development environment); other Linux distributions are expected to work |
+| OS | Ubuntu 22.04(development environment); other Linux distributions are expected to work |
 | Python | 3.10 or newer recommended |
 | Ollama | Llama 3.0 model pulled locally |
 | GPU | Developed on an NVIDIA RTX 4060; weaker hardware works but with slower responses |
