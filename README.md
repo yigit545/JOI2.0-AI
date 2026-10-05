@@ -93,7 +93,7 @@ JOI 2.0 is a local AI companion that runs entirely on your own machine. It uses 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/JOI2_0.git
+git clone https://github.com/yigit545/JOI2.0-AI.git
 cd JOI2_0
 ```
 
@@ -270,7 +270,7 @@ print(translator("Hello, how can I help you today?")[0]["translation_text"])
 - [x] **Stronger offline capability**, relying mainly on `os` and `sys`
 - [ ] More tool modules: `computer_control`, `computer_settings`, `file_processor`, `browser_control`, `desktop`, `open_app`, `send_message`, `system_monitor`, `youtube_video`, `web_search`
 - [ ] Integrated EN → TR translation
-- [ ] Better RAG context utilization
+- [x] Better RAG context utilization
 
 ---
 
