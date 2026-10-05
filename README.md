@@ -308,4 +308,12 @@ When adding new tool modules, please follow the existing signature convention (`
 
 ## License
 
-This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). See the [LICENSE](LICENSE) file for details.
+Copyright © 2026 Yiğit Erim Özdamar
+
+This project is licensed under the **PolyForm Noncommercial License 1.0.0**.
+
+You may inspect, study, modify, and use this software for **personal, educational, research, testing, and other non-commercial purposes**, subject to the terms of the license.
+
+**Commercial use is not permitted without explicit permission from the copyright holder.**
+
+For commercial licensing or permission, please contact the copyright holder.
